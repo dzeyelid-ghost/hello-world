@@ -7,13 +7,45 @@ body:
   - type: checkboxes
     id: require-agreement
     attributes:
-      label: 承諾の確認（チェックボックスのサンプル1）
-      description: 入力を強制するチェックボックスを設けることができます
+      label: 承諾の確認（チェックボックスのサンプル）
+      description: 入力を強制したり任意のチェックボックスを設けられます
       options:
         - label: 承諾します
           required: true
         - label: 任意のオプション
+
   - type: dropdown
+    id: select
+    attributes:
+      label: ドロップボックスのサンプル
+      description: ドロップボックスを設けられます
+      options:
+        - 項目1
+        - 項目2
+        - 項目3
+    validations:
+      required: true
+
   - type: input
+    id: title
+    attributes:
+      label: 入力ボックスのサンプル
+      description: 入力ボックスを設けられます
+      placeholder: プレースホルダーを設定できます
+      value: 初期値を設定できます
+    validations:
+      required: true
+
   - type: markdown
+    attributes:
+      value: |
+        Markdown記法を用いて、コンテンツを記載できます
+
   - type: textarea
+    id: message
+    attributes:
+      label: テキストエリアのサンプル
+      description: テキストエリアを設けられます
+      placeholder: プレースホルダーを設定できます
+      value: 初期値を設定できます
+      render: markdown
