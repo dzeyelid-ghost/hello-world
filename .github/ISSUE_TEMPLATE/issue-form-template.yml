@@ -1,5 +1,5 @@
 name: Issue form template
-about: This is a demo for issue form template
+description: This is a demo for issue form template
 title: '[Bug]: '
 labels: ['bug']
 projects: ['dzeyelid/1']
