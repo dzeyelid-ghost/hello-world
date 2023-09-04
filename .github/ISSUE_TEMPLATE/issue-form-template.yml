@@ -1,0 +1,19 @@
+name: Issue form template
+about: This is a demo for issue form template
+title: '[Bug]: '
+labels: ['bug']
+projects: ['dzeyelid/1']
+body:
+  - type: checkboxes
+    id: require-agreement
+    attributes:
+      label: 承諾の確認（チェックボックスのサンプル1）
+      description: 入力を強制するチェックボックスを設けることができます
+      options:
+        - label: 承諾します
+          required: true
+        - label: 任意のオプション
+  - type: dropdown
+  - type: input
+  - type: markdown
+  - type: textarea
